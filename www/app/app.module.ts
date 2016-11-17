@@ -1,35 +1,28 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
-import { RouterModule }    from '@angular/router';
+import { NgModule }             from '@angular/core';
+import { BrowserModule }        from '@angular/platform-browser';
+import { FormsModule }          from '@angular/forms';
+import { RouterModule }         from '@angular/router';
 
-import { PageDetailComponent } from './page-detail.component';
-import { PagesComponent } from './pages.component';
-import { NavBarComponent } from './navbar.component';
-
-import { NavigationService } from './navigation.service';
+import { PageDetailComponent }  from './components/page-detail.component';
+import { AppComponent }         from './components/app.component';
+import { NavBarComponent }      from './components/navbar.component';
+import { WelcomeComponent }     from './components/welcome.component';
+import { NavigationService }    from './services/navigation.service';
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
-  imports:      [
+  imports:  [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      {
-        path: 'pages',
-        component: PagesComponent
-      },
-      {
-        path: 'page/:id'
-        component: PageDetailComponent
-      }
-    ])
+    AppRoutingModule
   ],
   declarations: [
-    PagesComponent,
+    AppComponent,
     PageDetailComponent,
-    NavBarComponent
+    NavBarComponent,
+    WelcomeComponent
   ],
-  bootstrap: [ NavBarComponent ],
+  bootstrap: [ AppComponent ],
   providers: [NavigationService]
 })
 

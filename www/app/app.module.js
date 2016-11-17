@@ -11,11 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
-var router_1 = require('@angular/router');
-var page_detail_component_1 = require('./page-detail.component');
-var pages_component_1 = require('./pages.component');
-var navbar_component_1 = require('./navbar.component');
-var navigation_service_1 = require('./navigation.service');
+var page_detail_component_1 = require('./components/page-detail.component');
+var app_component_1 = require('./components/app.component');
+var navbar_component_1 = require('./components/navbar.component');
+var welcome_component_1 = require('./components/welcome.component');
+var navigation_service_1 = require('./services/navigation.service');
+var app_routing_module_1 = require('./app-routing.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,23 +25,15 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                router_1.RouterModule.forRoot([
-                    {
-                        path: 'pages',
-                        component: pages_component_1.PagesComponent
-                    },
-                    {
-                        path: 'page/:id',
-                        component: page_detail_component_1.PageDetailComponent
-                    }
-                ])
+                app_routing_module_1.AppRoutingModule
             ],
             declarations: [
-                pages_component_1.PagesComponent,
+                app_component_1.AppComponent,
                 page_detail_component_1.PageDetailComponent,
-                navbar_component_1.NavBarComponent
+                navbar_component_1.NavBarComponent,
+                welcome_component_1.WelcomeComponent
             ],
-            bootstrap: [navbar_component_1.NavBarComponent],
+            bootstrap: [app_component_1.AppComponent],
             providers: [navigation_service_1.NavigationService]
         }), 
         __metadata('design:paramtypes', [])
