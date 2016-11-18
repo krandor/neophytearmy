@@ -14,6 +14,7 @@ var forms_1 = require('@angular/forms');
 var page_detail_component_1 = require('./components/page-detail.component');
 var app_component_1 = require('./components/app.component');
 var navbar_component_1 = require('./components/navbar.component');
+var footer_component_1 = require('./components/footer.component');
 var welcome_component_1 = require('./components/welcome.component');
 var navigation_service_1 = require('./services/navigation.service');
 var app_routing_module_1 = require('./app-routing.module');
@@ -31,6 +32,7 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 page_detail_component_1.PageDetailComponent,
                 navbar_component_1.NavBarComponent,
+                footer_component_1.FooterComponent,
                 welcome_component_1.WelcomeComponent
             ],
             bootstrap: [app_component_1.AppComponent],

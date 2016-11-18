@@ -1,0 +1,17 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li *ngFor="let page of pages"
+                      (click)="onSelect(page)"
+                      [class.selected]="page === selectedPage">
+                      <span class="footer-menu-divider">&sdot;</span>
+                      <a [routerLink]="['/page', page.id]">{{page.name}}</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; {{year}}. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>

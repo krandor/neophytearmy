@@ -13,7 +13,7 @@ export const PAGES: Page[] = [
     name: 'About',
     description: 'About',
     content: 'I\'ve always been interested in technology. It\'s been a staple in my life for as long as I can remember. It\'s pretty great as long as it doesn\'t crach or catch on fire',
-    imgPath: '/img/bsod.jpg'
+    imgPath: '/img/bsod.png'
   },
   {
     id: 3,
