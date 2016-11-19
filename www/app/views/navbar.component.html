@@ -16,7 +16,7 @@
             (click)="onSelect(page)"
             [class.selected]="page === selectedPage">
             <!-- each page goes here -->
-            <a [routerLink]="['/page', page.id]">{{page.name}}</a>
+            <a [routerLink]="[page.path]">{{page.name}}</a>
           </li>
         </ul>
     </div>

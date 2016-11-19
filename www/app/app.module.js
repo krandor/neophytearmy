@@ -16,6 +16,8 @@ var app_component_1 = require('./components/app.component');
 var navbar_component_1 = require('./components/navbar.component');
 var footer_component_1 = require('./components/footer.component');
 var welcome_component_1 = require('./components/welcome.component');
+var about_component_1 = require('./components/about.component');
+var contact_component_1 = require('./components/contact.component');
 var navigation_service_1 = require('./services/navigation.service');
 var app_routing_module_1 = require('./app-routing.module');
 var AppModule = (function () {
@@ -33,7 +35,9 @@ var AppModule = (function () {
                 page_detail_component_1.PageDetailComponent,
                 navbar_component_1.NavBarComponent,
                 footer_component_1.FooterComponent,
-                welcome_component_1.WelcomeComponent
+                welcome_component_1.WelcomeComponent,
+                about_component_1.AboutComponent,
+                contact_component_1.ContactComponent
             ],
             bootstrap: [app_component_1.AppComponent],
             providers: [navigation_service_1.NavigationService]

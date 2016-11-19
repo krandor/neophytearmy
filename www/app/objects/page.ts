@@ -3,5 +3,5 @@ export class Page {
   name: string;
   description: string;
   content: string;
-  imgPath: string;
+  path: string;
 }

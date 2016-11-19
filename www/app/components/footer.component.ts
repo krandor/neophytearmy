@@ -10,7 +10,7 @@ import { NavigationService }  from '../services/navigation.service';
 
 export class FooterComponent implements OnInit
 {
-  year: Date;
+  year: string;
   pages: Page[];
   selectedPage: Page;
   constructor(private navigationService: NavigationService) { }
@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit
     this.getPages();
 
     //get year
-    this.year = new Date().getFullYear();
+    this.year = new Date().getFullYear().toString();
   }
 
   getPages(): void {

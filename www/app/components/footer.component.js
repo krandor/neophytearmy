@@ -18,7 +18,7 @@ var FooterComponent = (function () {
         //get pages
         this.getPages();
         //get year
-        this.year = new Date().getFullYear();
+        this.year = new Date().getFullYear().toString();
     };
     FooterComponent.prototype.getPages = function () {
         var _this = this;

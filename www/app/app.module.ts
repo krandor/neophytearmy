@@ -8,6 +8,8 @@ import { AppComponent }         from './components/app.component';
 import { NavBarComponent }      from './components/navbar.component';
 import { FooterComponent }      from './components/footer.component';
 import { WelcomeComponent }     from './components/welcome.component';
+import { AboutComponent }     from './components/about.component';
+import { ContactComponent }     from './components/contact.component';
 
 import { NavigationService }    from './services/navigation.service';
 import { AppRoutingModule }     from './app-routing.module';
@@ -23,7 +25,9 @@ import { AppRoutingModule }     from './app-routing.module';
     PageDetailComponent,
     NavBarComponent,
     FooterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [ NavigationService ]
